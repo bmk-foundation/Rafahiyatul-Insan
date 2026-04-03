@@ -456,6 +456,47 @@ function showResult(type, title, desc) {
     window.scrollTo(0,0);
 }
 
+// ৬. সাবস্ক্রিপশন ফর্ম (সংশোধিত)
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ8TqEirnXS5mEb0OjKYPh0mrayq6W5ssW5ScwF-KseoatGetpGuNI5j3Hr2LqzMSt/exec';
+const subscriptionForm = document.getElementById('subscription-form');
+const statusMsg = document.getElementById('status-message'); // এটি যোগ করা হয়েছে
+
+if (subscriptionForm) {
+    subscriptionForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = subscriptionForm.querySelector('.subscribe-btn');
+        const modal = document.getElementById('success-modal');
+
+        // রিসেট স্টেট
+        btn.innerHTML = "যাচাই করা হচ্ছে...";
+        btn.disabled = true;
+        if(statusMsg) statusMsg.style.display = 'none'; 
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(subscriptionForm)})
+            .then(response => response.json())
+            .then(data => {
+                btn.disabled = false;
+                btn.innerHTML = "সাবস্ক্রাইব";
+
+                // যদি ইমেইল আগে থেকেই থাকে
+                if(data.result === 'exists') {
+                    if(statusMsg) {
+                        statusMsg.style.display = 'flex'; // লাল সতর্কবার্তা দেখাবে
+                    }
+                } 
+                // যদি নতুন সাবস্ক্রিপশন সফল হয়
+                else if(data.result === 'success') {
+                    if (modal) modal.style.display = 'flex'; // ধন্যবাদ পপ-আপ দেখাবে
+                    subscriptionForm.reset();
+                }
+            })
+            .catch(error => {
+                btn.innerHTML = "আবার চেষ্টা করুন";
+                btn.disabled = false;
+                console.error('Error!', error.message);
+            });
+    });
+            }
 </script>
 </body>
 </html>
