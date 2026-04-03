@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# আপনার সাইটম্যাপের লোকেশন
+Sitemap: https://rafahiyatulinsan.2bd.net/sitemap.xml

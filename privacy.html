@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>গোপনীয়তা নীতি | রাফাহিয়াতুল ইনসান ফাউন্ডেশন</title>
+    <meta name="description" content="রাফাহিয়াতুল ইনসান ফাউন্ডেশন: আমাদের গোপনীয়তা নীতি এবং ব্যবহারকারীদের ব্যক্তিগত তথ্যের সুরক্ষা নিশ্চিতকরণ সংক্রান্ত বিস্তারিত তথ্যাদি।">
+    <meta name="keywords" content="রাফাহিয়াতুল ইনসান ফাউন্ডেশন, Rafahiyatul Insan Foundation, গোপনীয়তা নীতি, তথ্য সুরক্ষা, চ্যারিটি বাংলাদেশ">
+    <link rel="canonical" href="https://rafahiyatulinsan.2bd.net/privacy.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="privacy.css">
+
+    <meta name="theme-color" content="#27ae60">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico"> 
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+  <script>
+    !function(t,e,n){function s(){
+      var t=e.getElementsByTagName("script")[0],n=e.createElement("script");
+      n.type="text/javascript",n.async=!0,n.src="https://assistant.thrivedesk.com/bootloader.js?"+Date.now(),
+      t.parentNode.insertBefore(n,t)}if(t.Assistant=n=function(e,n,s){t.Assistant.readyQueue.push({method:e,options:n,data:s})},
+      n.readyQueue=[],"complete"===e.readyState)return s();
+    t.attachEvent?t.attachEvent("onload",s):t.addEventListener("load",s,!1)}
+    (window,document,window.Assistant||function(){}),window.Assistant("init","a1544fec-e420-49a1-b96a-4b56a7d1492d");
+  </script>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rafahiyatulinsan.2bd.net/privacy.html">
+    <meta property="og:title" content="গোপনীয়তা নীতি - রাফাহিয়াতুল ইনসান ফাউন্ডেশন">
+    <meta property="og:description" content="ব্যক্তিগত তথ্যের সুরক্ষা এবং আমাদের গোপনীয়তা নীতিমালা সম্পর্কে বিস্তারিত জানুন।">
+    <meta property="og:image" content="https://rafahiyatulinsan.2bd.net/images/og.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="গোপনীয়তা নীতি - রাফাহিয়াতুল ইনসান ফাউন্ডেশন">
+    <meta name="twitter:description" content="আমাদের গোপনীয়তা নীতিমালা।">
+    <meta name="twitter:image" content="https://rafahiyatulinsan.2bd.net/images/og.webp">
+<!----------------Style---------->
+
+    <style>
+        @font-face {
+            font-family: 'Adorsho';
+            src: url('AdorshoLip.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        
+        .policy-container {
+            width: 100%;
+            padding: 40px 10px; /* ডানে-বামে মাত্র ১০ পিক্সেল ফাঁকা */
+            box-sizing: border-box;
+            line-height: 1.8;
+        }
+
+        h1 { font-size: 30px; color: #018E49; margin-bottom: 15px; font-weight: 800; border-bottom: 3px solid #018E49; padding-bottom: 10px; }
+        h2 { font-size: 24px; color: #1a1a1a; margin-top: 35px; margin-bottom: 20px; font-weight: 700; border-left: 6px solid #018E49; padding-left: 12px; }
+        p { font-size: 18px; text-align: justify; margin-bottom: 20px; }
+        ul { list-style: none; padding-left: 0; margin-bottom: 25px; }
+        li { margin-bottom: 15px; font-size: 17px; border-bottom: 1px solid #f1f1f1; padding-bottom: 10px; padding-left: 5px; }
+        strong { color: #333; }
+
+        .important-note {
+            background: #f0fdf4;
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 5px solid #018E49;
+            margin: 30px 0;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.webp" alt="রাফাহিয়াতুল ইনসান ফাউন্ডেশন লোগো" class="nav-logo">
+        </a>
+        <div class="nav-right">
+            <a href="donation.html" class="header-donate-btn">দান করুন</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="nav-overlay" id="navOverlay">
+    <div class="overlay-backdrop" onclick="toggleMenu()"></div>
+    
+<div class="overlay-content">
+<div class="overlay-header">
+    <div class="drawer-brand">
+        <img src="images/logo.webp" alt="Logo" class="brand-logo">
+        <span class="brand-text">রাফাহিয়াতুল ইনসান ফাউঃ</span>
+    </div>
+    <i class="fas fa-times close-icon" onclick="toggleMenu()"></i>
+</div>
+<div class="overlay-links">
+    <a href="index.html"><i class="fas fa-home"></i> হোম</a>
+    <a href="donation.html"><i class="fas fa-hand-holding-usd"></i> দান করুন</a>
+    <a href="activities.html"><i class="fas fa-tasks"></i> কার্যক্রম</a>
+    <a href="gallery.html"><i class="fas fa-users"></i> গ্যালারি</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> আমাদের সম্পর্কে</a>
+    <a href="blogs.html"><i class="fas fa-newspaper"></i> ব্লগ</a> <a href="contact.html"><i class="fas fa-envelope"></i> যোগাযোগ</a> </div>
+    </div>
+</div>
+<!---------Main Contant---------->
+<main class="full">
+        <header>
+            <h1>গোপনীয়তা নীতি</h1>
+            <p style="color: #666; font-size: 16px;">কার্যকরী তারিখ: মার্চ ২০২৬ | রাফাহিয়াতুল ইনসান ফাউন্ডেশন</p>
+        </header>
+
+        <section>
+            <h2>গোপনীয়তার বিবৃতিঃ</h2>
+            <p>রাফাহিয়াতুল ইনসান ফাউন্ডেশন ("আমরা", "আমাদের") আপনার ব্যক্তিগত গোপনীয়তাকে সর্বোচ্চ অগ্রাধিকার দেয়। এই গোপনীয়তার বিবৃতির মাধ্যমে আমরা আপনাকে নিশ্চিত করছি যে, আমাদের ওয়েবসাইট ব্যবহারের সময় আপনার প্রদানকৃত কোনো তথ্যই আমরা অযৌক্তিক বা অনিরাপদ উদ্দেশ্যে ব্যবহার করি না। আমরা বিশ্বাস করি যে, স্বচ্ছতা ও সততাই আমাদের ফাউন্ডেশনের মূল ভিত্তি। এই নীতিমালার মাধ্যমে আমরা স্পষ্ট করছি যে, আপনার তথ্য সংগ্রহের উদ্দেশ্য কী এবং তা কীভাবে আপনার অধিকার রক্ষা করে।</p>
+        </section>
+
+        <section>
+            <h2>ব্যক্তিগত তথ্য সংগ্রহঃ</h2>
+            <p>আমাদের সেবামূলক কার্যক্রমে অংশগ্রহণ বা অনুদান প্রদানের সময় আমরা বিভিন্ন স্তরে তথ্য সংগ্রহ করে থাকি। এই তথ্যগুলো মূলত দুইভাবে সংগৃহীত হয়:</p>
+            <ul>
+                <li>• <strong>প্রত্যক্ষ তথ্য:</strong> আপনি যখন আমাদের নিউজলেটারে সাবস্ক্রাইব করেন, স্বেচ্ছাসেবক হিসেবে ফরম পূরণ করেন কিংবা দান করেন—তখন আপনার নাম, ইমেইল ঠিকানা, মোবাইল নম্বর, বর্তমান ও স্থায়ী ঠিকানা এবং পেশা সংক্রান্ত তথ্য আমরা সংগ্রহ করি।</li>
+                <li>• <strong>লেনদেন সংক্রান্ত তথ্য:</strong> আপনি যখন আর্থিক সহায়তা প্রদান করেন, তখন পেমেন্ট গেটওয়ের মাধ্যমে আপনার ট্রানজেকশন আইডি, তারিখ এবং অর্থের পরিমাণ রেকর্ড করা হয়।</li>
+                <li>• <strong>প্রযুক্তিগত তথ্য:</strong> আমাদের ওয়েবসাইটের কার্যকারিতা বৃদ্ধির লক্ষ্যে আমরা আপনার আইপি অ্যাড্রেস, ডিভাইসের ধরণ, ব্রাউজারের ধরণ এবং কুকিজের (Cookies) মাধ্যমে কিছু সাধারণ তথ্য সংগ্রহ করি যা আপনার ব্যক্তিগত পরিচয়ের বাইরে।</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ব্যক্তিগত তথ্যের ব্যবহারঃ</h2>
+            <p>সংগৃহীত তথ্যগুলো আমরা অত্যন্ত দায়িত্বশীলতার সাথে শুধুমাত্র নিম্নলিখিত মানবিক ও প্রশাসনিক উদ্দেশ্যে ব্যবহার করি:</p>
+            <ul>
+                <li>• <strong>স্বচ্ছতা নিশ্চিতকরণ:</strong> আপনার অনুদানের বিপরীতে ডিজিটাল রসিদ প্রস্তুত করা এবং সঠিক তহবিলে অর্থ পৌঁছে দেওয়া নিশ্চিত করা।</li>
+                <li>• <strong>যোগাযোগ রক্ষা:</strong> আমাদের চলমান প্রজেক্ট, বার্ষিক রিপোর্ট এবং বিশেষ কোনো ইভেন্টের আমন্ত্রণ ইমেইল বা এসএমএসের মাধ্যমে আপনার কাছে পৌঁছে দেওয়া।</li>
+                <li>• <strong>সেবার মানোন্নয়ন:</strong> ব্যবহারকারীরা আমাদের সাইটের কোন সেকশনে বেশি সময় কাটাচ্ছেন তা বিশ্লেষণ করে ওয়েবসাইটের ডিজাইন ও কন্টেন্ট আরও সহজবোধ্য করা।</li>
+                <li>• <strong>জরুরি সহায়তা:</strong> প্রাকৃতিক দুর্যোগ বা বিশেষ জরুরি অবস্থায় ত্রাণের জন্য আবেদন আপনাদের কাছে দ্রুত পৌঁছে দেওয়া যাতে সময়মতো সাহায্য নিশ্চিত করা যায়।</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ব্যক্তিগত তথ্যের নিয়ন্ত্রণঃ</h2>
+            <p>আপনার ব্যক্তিগত তথ্যের ওপর আপনার পূর্ণ নিয়ন্ত্রণ রয়েছে। রাফাহিয়াতুল ইনসান ফাউন্ডেশন ব্যবহারকারীর অধিকারকে সম্মান জানায়:</p>
+            <ul>
+                <li>• <strong>তথ্য পরিবর্তন বা সংশোধন:</strong> আপনার কোনো তথ্য (যেমন ঠিকানা বা মোবাইল নম্বর) যদি পরিবর্তন হয়, তবে আমাদের সাথে যোগাযোগ করে তা আপডেট করার সুযোগ রয়েছে।</li>
+                <li>• <strong>তথ্য মুছে ফেলা:</strong> আপনি যদি চান আমাদের ডাটাবেস থেকে আপনার তথ্য চিরতরে মুছে ফেলবেন, তবে একটি ইমেইলের মাধ্যমে আমাদের জানালে আমরা তা কার্যকর করব।</li>
+                <li>• <strong>সাবস্ক্রিপশন বাতিল:</strong> আপনি যেকোনো সময় আমাদের ইমেইল তালিকা থেকে নিজেকে সরিয়ে নিতে পারেন (Unsubscribe), যার ফলে আপনি আর কোনো নোটিফিকেশন পাবেন না।(Unsubscribe) করতে যোগাযোগ করুন।
+                </li>
+            </ul>
+        </section>
+
+        <div class="important-note">
+            <strong>বিশেষ দ্রষ্টব্যঃ</strong> আমরা স্পষ্টভাবে অঙ্গীকার করছি যে, আপনার ব্যক্তিগত তথ্য কোনো বাণিজ্যিক প্রতিষ্ঠান, বিপণন সংস্থা বা তৃতীয় কোনো পক্ষের কাছে আর্থিক লাভের বিনিময়ে বিক্রি, লিজ বা হস্তান্তর করা হয় না। আপনার তথ্য শুধুমাত্র আমাদের সেবামূলক কাজের গণ্ডিতে সীমাবদ্ধ থাকে।
+        </div>
+
+        <section>
+            <h2>আপনার ব্যক্তিগত তথ্যের নিরাপত্তাঃ</h2>
+            <p>আমরা আপনার তথ্যের সুরক্ষায় আধুনিক ও শক্তিশালী নিরাপত্তা ব্যবস্থা ব্যবহার করি। ইন্টারনেটের মাধ্যমে তথ্য আদান-প্রদান শতভাগ নিরাপদ করা চ্যালেঞ্জিং হলেও আমরা নিম্নোক্ত পদক্ষেপগুলো গ্রহণ করি:</p>
+            <ul>
+                <li>• <strong>SSL এনক্রিপশন:</strong> আমাদের সাইটটি SSL (Secure Sockets Layer) দ্বারা সুরক্ষিত, যা আপনার ডাটাকে এনক্রিপ্ট করে প্রেরন করে।</li>
+                <li>• <strong>সুরক্ষিত ডাটাবেস:</strong> আপনার ডাটা আমাদের উচ্চ-নিরাপত্তা সম্পন্ন সার্ভারে সংরক্ষিত থাকে যেখানে অননুমোদিত প্রবেশ সম্পূর্ণ নিষিদ্ধ।</li>
+                <li>• <strong>সীমিত এক্সেস:</strong> ফাউন্ডেশনের শুধুমাত্র নির্দিষ্ট কর্মকর্তাদের আপনার তথ্য দেখার অনুমতি দেওয়া হয় যারা গোপনীয়তা রক্ষায় আইনত বাধ্য।</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>নীতির পরিবর্তনঃ</h2>
+            <p>রাফাহিয়াতুল ইনসান ফাউন্ডেশন যেকোনো সময় এই গোপনীয়তা নীতি পরিবর্তন বা পরিমার্জন করার অধিকার সংরক্ষণ করে। তবে কোনো বড় ধরণের পরিবর্তন আনা হলে আমরা তা ওয়েবসাইটের নোটিশ বোর্ডে অথবা ইমেইলের মাধ্যমে আপনাকে অবহিত করব। পরিবর্তনের পর সাইট ব্যবহার চালিয়ে যাওয়ার অর্থ হলো আপনি নতুন নীতিমালার সাথে একমত হয়েছেন। আমরা আপনাকে অনুরোধ করি সময় সময় এই পেজটি ভিজিট করে সর্বশেষ আপডেট সম্পর্কে অবগত থাকার জন্য।</p>
+        </section>
+
+        <end style="margin-top: 50px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
+            <p style="font-size: 16px; color: #888; text-align: left;">আমাদের গোপনীয়তা নীতি সম্পর্কে কোনো প্রশ্ন থাকলে সরাসরি ইমেইল করুন: <strong>privacy@rafayatulinsan.org // demo email</strong></p>
+        </end>
+</main>
+<!---------Main Contant---------->
+<div id="success-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <div class="checkmark-wrapper">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+        </div>
+        <h2>ধন্যবাদ!</h2>
+        <p>আপনার সাবস্ক্রিপশন সফলভাবে সম্পন্ন হয়েছে।</p>
+        <button onclick="closeModal()" class="close-modal-btn">ঠিক আছে</button>
+    </div>
+</div>
+<section  class="newsletter-wrapper">
+    <div class="newsletter-card">
+        <h2 class="newsletter-title">নিয়মিত নিউজলেটার পেতে সাবস্ক্রাইব করুন</h2>
+<form class="newsletter-form" id="subscription-form">
+    <div class="input-group">
+        <input type="email" name="Email" placeholder="ইমেইল লিখুন" required>
+        <button type="submit" class="subscribe-btn">সাবস্ক্রাইব</button>
+    </div>
+    
+    <div id="status-message" style="display: none; background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 8px; margin-top: 15px; font-size: 14px; align-items: center; justify-content: center; gap: 10px; border: 1px solid #f5c6cb;">
+        <span style="background: #721c24; color: white; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 12px;">ⓘ</span>
+        <span>আপনি ইতোমধ্যে সাবস্ক্রাইব করেছেন</span>
+    </div>
+</form>
+
+
+    </div>
+</section><footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col about-col">
+            <a href="#" class="footer-logo">                <img src="images/flogo.webp" alt=""/></a>
+            <p class="footer-desc">
+                এই প্রতিষ্ঠান মানবতার শিক্ষক, মানুষের মুক্তি ও শান্তির দূত, মহানবী মুহাম্মদ সা.-এর পদাঙ্ক অনুসরণ করে আর্তমানবতার সেবায় একটি আদর্শ কল্যাণ সমাজ বিনির্মাণে কাজ করে যাচ্ছে।
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>মেনু</h4>
+            <ul>
+                <li><a href="#">আমাদের সম্পর্কে</a></li>
+                <li><a href="#">কার্যক্রমসমূহ</a></li>
+                <li><a href="#">ব্লগ</a></li>
+                <li><a href="#">গ্যালারি</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>যুক্ত হোন</h4>
+            <ul>
+                <li><a href="member.html">সদস্য হোন</a></li>
+                <li><!--a href="#">আজীবন সদস্য</a></li>
+                <li><a href="#">স্বেচ্ছাসেবক</a></li>
+                <li><a href="#">ক্যারিয়ার</a></li-->
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>অন্যান্য</h4>
+            <ul>
+                <li><a href="contact.html">যোগাযোগ</a></li>
+                <li><a href="terms.html">পরিষেবার শর্তাবলী</a></li>
+                <li><a href="#">গোপনীয়তা নীতি</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="social-icons">
+            <a href="https://www.facebook.com/rafahiyatulinsan"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>    
+        <div class="footer-bottom">
+        <p>স্বত্ব © ২০২৬ রাফাহিয়াতুল ইনসান ফাউন্ডেশন - সর্বস্বত্ব সংরক্ষিত।</p>
+    </div>
+</footer>
+<script src="scripty.js"></script>
+<script>
+// --- ১. নেভবার হাইড/শো লজিক ---
+let lastScrollY = window.scrollY;
+let scrollDistance = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+
+    // ১. নিচে স্ক্রল করলে হাইড হবে (১৫০ পিক্সেল পার হওয়ার পর)
+    if (delta > 0 && currentScrollY > 100) {
+        navbar.classList.add("navbar--hidden");
+        scrollDistance = 20; // নিচে যাওয়ার সময় ডিস্ট্যান্স রিসেট
+    } 
+    
+    // ২. উপরে স্ক্রল করার সময় লজিক
+    else if (delta < -5) { // অন্তত ১০ পিক্সেল উপরে টান দিলে হিসাব শুরু হবে
+        scrollDistance += Math.abs(delta);
+        
+        // অন্তত ৬০ পিক্সেল উপরে স্ক্রল করলে অথবা পেজের একদম টপে থাকলে শো হবে
+        if (scrollDistance > 60 || currentScrollY < 100) {
+            navbar.classList.remove("navbar--hidden");
+        }
+    }
+
+    lastScrollY = currentScrollY;
+}, { passive: true });
+
+// --- ২. মেনু টগল লজিক ---
+function toggleMenu() {
+    const overlay = document.getElementById('navOverlay');
+    overlay.classList.toggle('active');
+
+    // মেনু যখন খোলা থাকবে তখন পেজ স্ক্রল হবে না (Modern Touch)
+    if(overlay.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+}
+// ৬. সাবস্ক্রিপশন ফর্ম (সংশোধিত)
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ8TqEirnXS5mEb0OjKYPh0mrayq6W5ssW5ScwF-KseoatGetpGuNI5j3Hr2LqzMSt/exec';
+const subscriptionForm = document.getElementById('subscription-form');
+const statusMsg = document.getElementById('status-message'); // এটি যোগ করা হয়েছে
+
+if (subscriptionForm) {
+    subscriptionForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = subscriptionForm.querySelector('.subscribe-btn');
+        const modal = document.getElementById('success-modal');
+
+        // রিসেট স্টেট
+        btn.innerHTML = "যাচাই করা হচ্ছে...";
+        btn.disabled = true;
+        if(statusMsg) statusMsg.style.display = 'none'; 
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(subscriptionForm)})
+            .then(response => response.json())
+            .then(data => {
+                btn.disabled = false;
+                btn.innerHTML = "সাবস্ক্রাইব";
+
+                // যদি ইমেইল আগে থেকেই থাকে
+                if(data.result === 'exists') {
+                    if(statusMsg) {
+                        statusMsg.style.display = 'flex'; // লাল সতর্কবার্তা দেখাবে
+                    }
+                } 
+                // যদি নতুন সাবস্ক্রিপশন সফল হয়
+                else if(data.result === 'success') {
+                    if (modal) modal.style.display = 'flex'; // ধন্যবাদ পপ-আপ দেখাবে
+                    subscriptionForm.reset();
+                }
+            })
+            .catch(error => {
+                btn.innerHTML = "আবার চেষ্টা করুন";
+                btn.disabled = false;
+                console.error('Error!', error.message);
+            });
+    });
+}
+
+function closeModal() {
+    const modal = document.getElementById('success-modal');
+    if (modal) modal.style.display = 'none';
+}
+</script>
+</body>
+</html>

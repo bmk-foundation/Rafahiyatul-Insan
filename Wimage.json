@@ -1,0 +1,18 @@
+{
+  "gallery": [
+    { "url": "images/t1.jpg", "category": "বন্যা", "year": "2026" },
+    { "url": "images/t5.jpg", "category": "বন্যা", "year": "2024" },
+
+    { "url": "images/t7.jpg", "category": "কুরবানী", "year": "2023" },
+
+    { "url": "images/t3.jpg", "category": "খাদ্য বিতরণ", "year": "2025" },
+    { "url": "images/t8.jpg", "category": "খাদ্য বিতরণ", "year": "2023" },
+
+    { "url": "images/t2.jpeg", "category": "শীতবস্ত্র বিতরণ", "year": "2026" },
+    { "url": "images/t6.jpg", "category": "শীতবস্ত্র বিতরণ", "year": "2024" },
+
+    { "url": "images/t4.jpg", "category": "স্বাবলম্বীকরণ", "year": "2025" },
+    { "url": "images/t9.jpg", "category": "স্বাবলম্বীকরণ", "year": "2026" },
+    { "url": "images/t9.jpg", "category": "স্বাবলম্বীকরণ", "year": "2026" },
+    { "url": "images/t9.jpg", "category": "স্বাবলম্বীকরণ", "year": "2026" }
+  ]}

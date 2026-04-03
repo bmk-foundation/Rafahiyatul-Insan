@@ -1,0 +1,32 @@
+{"videos": [
+    {
+      "id": "v1",
+      "title": "কুরআন তেলাওয়াত - সূরা আর রহমান",
+      "youtubeUrl": "https://www.youtube.com/embed/AKpBkujTHa4?si=L6p1-J_3X2gex4zO",
+      "year": "2026"
+    },
+    {
+      "id": "v2",
+      "title": "কুরআন তেলাওয়াত - সূরা কাহাফ",
+      "youtubeUrl": "https://www.youtube.com/embed/qsLYwttiMt8?si=7pYH4rNSvHqzMPOt",
+      "year": "2026"
+    },
+    {
+      "id": "v3",
+      "title": "ইসলামিক গজল - তোমাকে ডাকি যদি একবার আল্লাহ",
+      "youtubeUrl": "https://www.youtube.com/embed/cNMyUl0xwEI?si=MeutklitjHw48NX_",
+      "year": "2025"
+    },
+    {
+      "id": "v4",
+      "title": "ইসলামিক গজল - হারিয়ে যাব একদিন আমি",
+      "youtubeUrl": "https://www.youtube.com/embed/GK2ippphNnM?si=7WIiQb42tC97uAr4",
+      "year": "2025"
+    },
+        {
+      "id": "v5",
+      "title": "শহীদ শরিফ ওসমান হাদী",
+      "youtubeUrl": "https://www.youtube.com/embed/oNtZnaocEkQ?si=x8I5kLvttuVrX780",
+      "year": "2025"
+    }
+]}

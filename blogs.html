@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ব্লগ ও কন্টেন্ট | রাফাহিয়াতুল ইনসান ফাউন্ডেশনের সর্বশেষ আপডেট</title>
+    <meta name="description" content="রাফাহিয়াতুল ইনসান ফাউন্ডেশনের সাম্প্রতিক কার্যক্রম, মানবিক গল্পের নিবন্ধ এবং সমাজসেবামূলক বিভিন্ন ব্লগ পড়ুন। আমাদের সাথে থাকুন এবং আপডেট জানুন।">
+    <meta name="keywords" content="রাফাহিয়াতুল ইনসান ফাউন্ডেশন ব্লগ, মানবিক গল্প, সমাজসেবা নিবন্ধ, চ্যারিটি ব্লগ বাংলাদেশ, Rafahiyatul Insan Foundation Blog">
+    <link rel="canonical" href="https://rafahiyatulinsan.2bd.net/blogs.html">
+
+    <link rel="stylesheet" href="blogs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="theme-color" content="#27ae60">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+  <script>
+    !function(t,e,n){function s(){
+      var t=e.getElementsByTagName("script")[0],n=e.createElement("script");
+      n.type="text/javascript",n.async=!0,n.src="https://assistant.thrivedesk.com/bootloader.js?"+Date.now(),
+      t.parentNode.insertBefore(n,t)}if(t.Assistant=n=function(e,n,s){t.Assistant.readyQueue.push({method:e,options:n,data:s})},
+      n.readyQueue=[],"complete"===e.readyState)return s();
+    t.attachEvent?t.attachEvent("onload",s):t.addEventListener("load",s,!1)}
+    (window,document,window.Assistant||function(){}),window.Assistant("init","a1544fec-e420-49a1-b96a-4b56a7d1492d");
+  </script>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rafahiyatulinsan.2bd.net/blogs.html">
+    <meta property="og:title" content="আমাদের ব্লগ - 
+    রাফাহিয়াতুল ইনসান ফাউন্ডেশন">
+    <meta property="og:description" content="মানবতার কল্যাণে আমাদের বিভিন্ন উদ্যোগ এবং অনুপ্রেরণামূলক গল্পগুলো পড়ুন।">
+    <meta property="og:image" content="https://rafahiyatulinsan.2bd.net/images/og.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ব্লগ | রাফাহিয়াতুল ইনসান ফাউন্ডেশন">
+    <meta name="twitter:description" content="সমাজের ইতিবাচক পরিবর্তনের গল্প এবং আমাদের কার্যক্রমের আপডেট দেখুন।">
+    <meta name="twitter:image" content="https://rafahiyatulinsan.2bd.net/images/og.webp">
+</head>
+
+<body>
+    <!--div class="demo-badge"><span>Demo Mode</span></div>
+
+<div class="demo-bottom-bar">
+    <i class="fas fa-exclamation-triangle" style="color: #f39c12; margin-right: 8px;"></i>
+    শুধুমাত্র দেখার জন্য । বর্তমানে আমাদের কার্যক্রম হালনাগাদ করা হচ্ছে।
+</div>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.webp" alt="রাফাহিয়াতুল ইনসান ফাউন্ডেশন লোগো" class="nav-logo">
+        </a>
+        <div class="nav-right">
+<a href="donation.html" class="header-donate-btn">দান করুন</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="nav-overlay" id="navOverlay">
+    <div class="overlay-backdrop" onclick="toggleMenu()"></div>
+    
+<div class="overlay-content">
+<div class="overlay-header">
+    <div class="drawer-brand">
+        <img src="images/logo.webp" alt="Logo" class="brand-logo">
+        <span class="brand-text">রাফাহিয়াতুল ইনসান ফাউঃ</span>
+    </div>
+    <i class="fas fa-times close-icon" onclick="toggleMenu()"></i>
+</div>
+<div class="overlay-links">
+    <a href="index.html"><i class="fas fa-home"></i> হোম</a>
+    <a href="donation.html"><i class="fas fa-hand-holding-usd"></i> দান করুন</a>
+    <a href="activities.html"><i class="fas fa-tasks"></i> কার্যক্রম</a>
+    <a href="gallery.html"><i class="fas fa-users"></i> গ্যালারি</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> আমাদের সম্পর্কে</a>
+    <a href="blogs.html"><i class="fas fa-newspaper"></i> ব্লগ</a> <a href="contact.html"><i class="fas fa-envelope"></i> যোগাযোগ</a> </div>
+
+    </div>
+</div>
+
+    <header class="blogs-header">
+        <div>
+            <h1>ব্লগ</h1>
+            <p>মানবতার সেবায় আমাদের প্রতিটি পদক্ষেপ</p>
+        </div>
+    </header>
+<section class="container">
+    <div class="search-section">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="blogSearch" placeholder="ব্লগ সার্চ করুন..." onkeyup="filterBlogs()">
+        </div>
+        <button class="all-btn" onclick="resetSearch()">সকল</button>
+    </div>
+<div class="reminder-container">
+    <div class="reminder-text">
+        এখানে আমাদের সকল ব্লগ দেখা যাবে, ইনশা-আল্লাহ।
+    </div>
+</div>
+    <div class="blog-grid" id="all-blog-list">
+        </div>
+    
+    <div class="pagination" id="pagination"></div>
+</section>
+<div id="success-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <div class="checkmark-wrapper">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+        </div>
+        <h2>ধন্যবাদ!</h2>
+        <p>আপনার সাবস্ক্রিপশন সফলভাবে সম্পন্ন হয়েছে।</p>
+        <button onclick="closeModal()" class="close-modal-btn">ঠিক আছে</button>
+    </div>
+</div>
+<section  class="newsletter-wrapper">
+    <div class="newsletter-card">
+        <h2 class="newsletter-title">নিয়মিত নিউজলেটার পেতে সাবস্ক্রাইব করুন</h2>
+<form class="newsletter-form" id="subscription-form">
+    <div class="input-group">
+        <input type="email" name="Email" placeholder="ইমেইল লিখুন" required>
+        <button type="submit" class="subscribe-btn">সাবস্ক্রাইব</button>
+    </div>
+    
+    <div id="status-message" style="display: none; background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 8px; margin-top: 15px; font-size: 14px; align-items: center; justify-content: center; gap: 10px; border: 1px solid #f5c6cb;">
+        <span style="background: #721c24; color: white; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 12px;">ⓘ</span>
+        <span>আপনি ইতোমধ্যে সাবস্ক্রাইব করেছেন</span>
+    </div>
+</form>
+
+
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col about-col">
+            <a href="#" class="footer-logo">                <img src="images/flogo.webp" alt=""/></a>
+            <p class="footer-desc">
+                এই প্রতিষ্ঠান মানবতার শিক্ষক, মানুষের মুক্তি ও শান্তির দূত, মহানবী মুহাম্মদ সা.-এর পদাঙ্ক অনুসরণ করে আর্তমানবতার সেবায় একটি আদর্শ কল্যাণ সমাজ বিনির্মাণে কাজ করে যাচ্ছে।
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>মেনু</h4>
+            <ul>
+                <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                <li><a href="activities.html">কার্যক্রমসমূহ</a></li>
+                <li><a href="blogs.html">ব্লগ</a></li>
+                <li><a href="gallery.html">গ্যালারি</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>যুক্ত হোন</h4>
+            <ul>
+                <li><a href="member.html">সদস্য হোন</a></li>
+                <li><!--a href="#">আজীবন সদস্য</a></li>
+                <li><a href="#">স্বেচ্ছাসেবক</a></li>
+                <li><a href="#">ক্যারিয়ার</a></li-->
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>অন্যান্য</h4>
+            <ul>
+                <li><a href="contact.html">যোগাযোগ</a></li>
+                <li><a href="terms.html">পরিষেবার শর্তাবলী</a></li>
+                <li><a href="privacy.html">গোপনীয়তা নীতি</a></li>
+            </ul>
+        </div>
+    </div>
+<div class="social-icons">
+            <a href="https://www.facebook.com/rafahiyatulinsan"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>    
+        <div class="footer-bottom">
+        <p>স্বত্ব © ২০২৬ রাফাহিয়াতুল ইনসান ফাউন্ডেশন - সর্বস্বত্ব সংরক্ষিত।</p>
+    </div>
+</footer>
+<script>
+    let allBlogs = [];
+    const itemsPerPage = 11;
+    let currentPage = parseInt(sessionStorage.getItem('last_page')) || 1;
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // বডি শো করা
+        document.body.classList.add('loaded');
+
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                allBlogs = data.blogs;
+                const lastSearch = sessionStorage.getItem('last_search') || "";
+                if(lastSearch) {
+                    document.getElementById('blogSearch').value = lastSearch;
+                    filterBlogs();
+                } else {
+                    displayBlogs(currentPage, true);
+                }
+            })
+            .catch(err => console.error("Error:", err));
+    });
+
+    function displayBlogs(page, isInitialLoad = false) {
+        currentPage = page;
+        sessionStorage.setItem('last_page', page);
+        
+        const list = document.getElementById('all-blog-list');
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const paginatedItems = allBlogs.slice(startIndex, endIndex);
+
+        // কন্টেন্ট রেন্ডার
+        list.innerHTML = paginatedItems.map(blog => `
+            <div class="blog-card" onclick="handleCardClick('${blog.id}')">
+                <div class="blog-img">
+                    <img src="${blog.coverImage}" alt="${blog.title}" onerror="this.src='images/placeholder.jpg'">
+                </div>
+                <div class="blog-info">
+                    <h3>${blog.title}</h3>
+                    <p>${blog.shortDescription || (blog.content[0].value.substring(0, 150) + '...')}</p>
+                    <div class="date-tag">
+                        <i class="far fa-calendar-alt"></i> ${blog.date}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        // কার্ডগুলো একে একে শো করানো (Staggered Animation)
+        const cards = list.querySelectorAll('.blog-card');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('reveal');
+            }, index * 50); // প্রতি কার্ড ৫০ মিলি-সেকেন্ড পর পর আসবে
+        });
+
+        setupPagination();
+
+        if (isInitialLoad) {
+            const savedScroll = sessionStorage.getItem('last_scroll_pos');
+            if (savedScroll) {
+                setTimeout(() => {
+                    window.scrollTo({ top: parseInt(savedScroll), behavior: 'instant' });
+                    sessionStorage.removeItem('last_scroll_pos');
+                }, 150);
+            }
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
+    function handleCardClick(id) {
+        sessionStorage.setItem('last_scroll_pos', window.scrollY);
+        location.href = `blog-details.html?id=${id}`;
+    }
+
+    function setupPagination() {
+        const pageCount = Math.ceil(allBlogs.length / itemsPerPage);
+        const paginationContainer = document.getElementById('pagination');
+        paginationContainer.innerHTML = '';
+        if (pageCount <= 1) return;
+
+        // Previous Button
+        const prevBtn = document.createElement('button');
+        prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+        prevBtn.disabled = (currentPage === 1);
+        prevBtn.onclick = () => { if(currentPage > 1) displayBlogs(currentPage - 1); };
+        paginationContainer.appendChild(prevBtn);
+
+        for (let i = 1; i <= pageCount; i++) {
+            const btn = document.createElement('button');
+            btn.innerText = i;
+            if (i === currentPage) btn.classList.add('active');
+            btn.onclick = () => displayBlogs(i);
+            paginationContainer.appendChild(btn);
+        }
+
+        // Next Button
+        const nextBtn = document.createElement('button');
+        nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+        nextBtn.disabled = (currentPage === pageCount);
+        nextBtn.onclick = () => { if(currentPage < pageCount) displayBlogs(currentPage + 1); };
+        paginationContainer.appendChild(nextBtn);
+    }
+
+    function filterBlogs() {
+        const list = document.getElementById('all-blog-list');
+        list.classList.add('filtering'); // সার্চের সময় হালকা ব্লার হবে
+        
+        const searchTerm = document.getElementById('blogSearch').value.toLowerCase();
+        sessionStorage.setItem('last_search', searchTerm);
+        
+        const filtered = allBlogs.filter(blog => 
+            blog.title.toLowerCase().includes(searchTerm)
+        );
+
+        setTimeout(() => {
+            renderFilteredBlogs(filtered);
+            list.classList.remove('filtering');
+        }, 300);
+    }
+
+    function renderFilteredBlogs(items) {
+        const list = document.getElementById('all-blog-list');
+        const pagination = document.getElementById('pagination');
+
+        if (items.length === 0) {
+            list.innerHTML = `<p style="grid-column: 1/-1; text-align: center; padding: 50px; color: red;">দুঃখিত, এই নামে কোনো ব্লগ পাওয়া যায়নি।</p>`;
+            pagination.style.display = 'none';
+            return;
+        }
+
+        list.innerHTML = items.map(blog => `
+            <div class="blog-card reveal" onclick="handleCardClick('${blog.id}')">
+                <div class="blog-img">
+                    <img src="${blog.coverImage}" alt="${blog.title}" onerror="this.src='images/placeholder.jpg'">
+                </div>
+                <div class="blog-info">
+                    <h3>${blog.title}</h3>
+                    <p>${blog.shortDescription || (blog.content[0].value.substring(0, 120) + '...')}</p>
+                    <div class="date-tag"><i class="far fa-calendar-alt"></i> ${blog.date}</div>
+                </div>
+            </div>
+        `).join('');
+
+        pagination.style.display = (document.getElementById('blogSearch').value === "") ? 'flex' : 'none';
+    }
+
+    function resetSearch() {
+        document.getElementById('blogSearch').value = "";
+        sessionStorage.removeItem('last_search');
+        displayBlogs(1); 
+    }
+</script>
+
+
+<script>
+// --- ১. নেভবার হাইড/শো লজিক ---
+let lastScrollY = window.scrollY;
+let scrollDistance = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+
+    // ১. নিচে স্ক্রল করলে হাইড হবে (১৫০ পিক্সেল পার হওয়ার পর)
+    if (delta > 0 && currentScrollY > 100) {
+        navbar.classList.add("navbar--hidden");
+        scrollDistance = 20; // নিচে যাওয়ার সময় ডিস্ট্যান্স রিসেট
+    } 
+    
+    // ২. উপরে স্ক্রল করার সময় লজিক
+    else if (delta < -5) { // অন্তত ১০ পিক্সেল উপরে টান দিলে হিসাব শুরু হবে
+        scrollDistance += Math.abs(delta);
+        
+        // অন্তত ৬০ পিক্সেল উপরে স্ক্রল করলে অথবা পেজের একদম টপে থাকলে শো হবে
+        if (scrollDistance > 60 || currentScrollY < 100) {
+            navbar.classList.remove("navbar--hidden");
+        }
+    }
+
+    lastScrollY = currentScrollY;
+}, { passive: true });
+
+// --- ২. মেনু টগল লজিক ---
+function toggleMenu() {
+    const overlay = document.getElementById('navOverlay');
+    overlay.classList.toggle('active');
+
+    // মেনু যখন খোলা থাকবে তখন পেজ স্ক্রল হবে না (Modern Touch)
+    if(overlay.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+}
+
+// ৬. সাবস্ক্রিপশন ফর্ম (সংশোধিত)
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ8TqEirnXS5mEb0OjKYPh0mrayq6W5ssW5ScwF-KseoatGetpGuNI5j3Hr2LqzMSt/exec';
+const subscriptionForm = document.getElementById('subscription-form');
+const statusMsg = document.getElementById('status-message'); // এটি যোগ করা হয়েছে
+
+if (subscriptionForm) {
+    subscriptionForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = subscriptionForm.querySelector('.subscribe-btn');
+        const modal = document.getElementById('success-modal');
+
+        // রিসেট স্টেট
+        btn.innerHTML = "যাচাই করা হচ্ছে...";
+        btn.disabled = true;
+        if(statusMsg) statusMsg.style.display = 'none'; 
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(subscriptionForm)})
+            .then(response => response.json())
+            .then(data => {
+                btn.disabled = false;
+                btn.innerHTML = "সাবস্ক্রাইব";
+
+                // যদি ইমেইল আগে থেকেই থাকে
+                if(data.result === 'exists') {
+                    if(statusMsg) {
+                        statusMsg.style.display = 'flex'; // লাল সতর্কবার্তা দেখাবে
+                    }
+                } 
+                // যদি নতুন সাবস্ক্রিপশন সফল হয়
+                else if(data.result === 'success') {
+                    if (modal) modal.style.display = 'flex'; // ধন্যবাদ পপ-আপ দেখাবে
+                    subscriptionForm.reset();
+                }
+            })
+            .catch(error => {
+                btn.innerHTML = "আবার চেষ্টা করুন";
+                btn.disabled = false;
+                console.error('Error!', error.message);
+            });
+    });
+}
+
+function closeModal() {
+    const modal = document.getElementById('success-modal');
+    if (modal) modal.style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ১. বর্তমান পেজের ফাইল নেম এবং URL প্যারামিটার বের করা
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const urlParams = new URLSearchParams(window.location.search);
+    const hasFund = urlParams.has('fund'); // ডোনেশন পেজের জন্য চেক
+    const hasBlogId = urlParams.has('id'); // ব্লগ ডিটেইলস পেজের জন্য চেক
+
+    // ২. সব মেনু লিঙ্কগুলো ধরা
+    const navLinks = document.querySelectorAll('.overlay-links a');
+
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+
+        // কন্ডিশন ১: যদি সরাসরি ফাইল নেম মিলে যায় (যেমন: index.html)
+        if (linkPath === currentPath) {
+            setActive(link);
+        }
+
+        // কন্ডিশন ২: যদি ব্লগ ডিটেইলস পেজে থাকে, তবে 'blogs.html' লিঙ্কটি হাইলাইট হবে
+        if (currentPath.includes('blog-details.html') && linkPath === 'blogs.html') {
+            setActive(link);
+        }
+
+        // কন্ডিশন ৩: যদি ডোনেশন ডিটেইলস পেজে থাকে, তবে 'donation.html' লিঙ্কটি হাইলাইট হবে
+        // আপনার ফাইলের নাম donation-form.html বা যেটা হোক, সেটা নিচে দিন
+        if (currentPath.includes('donate-form.html') && linkPath === 'donation.html') {
+            setActive(link);
+        }
+    });
+
+    // অ্যাক্টিভ ক্লাস বসানো এবং ক্লিক বন্ধ করার ফাংশন
+    function setActive(el) {
+        el.classList.add('active-link');
+        // ইউজার ওই পেজেই থাকলে ক্লিক করলে পেজ লোড হবে না
+        el.addEventListener('click', (e) => {
+            // যদি মেনু বন্ধ করার দরকার হয় তবে এখানে toggleMenu() কল করতে পারেন
+            e.preventDefault(); 
+        });
+    }
+});
+
+</script>
+</body>
+</html>
