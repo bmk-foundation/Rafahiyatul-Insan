@@ -203,17 +203,18 @@ body {
 }
 
 /* Drawer UI */
+/* Drawer UI */
 .drawer-brand {
     display: flex;         /* লোগো এবং লেখা পাশাপাশি আনবে */
     align-items: center;   /* লোগো এবং লেখাকে লম্বালম্বিভাবে সমান রাখবে */
-    gap: 0px;             /* লোগো এবং লেখার মাঝখানে ফাঁকা তৈরি করবে */
+    gap: 10px;             /* লোগো এবং লেখার মাঝখানে ফাঁকা তৈরি করবে */
 }
 
 .brand-logo {
     height: 70px;          /* লোগোর উচ্চতা আপনার প্রয়োজনমতো পরিবর্তন করতে পারেন */
     width: auto;           /* অনুপাত ঠিক রাখবে */
     object-fit: contain;
-    margin-left: -20px !important;
+    margin-left: -10px !important;
 }
 
 .brand-text {
@@ -237,6 +238,7 @@ font-size: 16px;
 font-size: 20px;
 }
 }
+
 
 .overlay-header {
     padding: 20px;
