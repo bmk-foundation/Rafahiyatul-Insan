@@ -671,3 +671,34 @@ height: 100px;
         gap: 5px;
     }
 }
+/* Consent Box Design */
+.consent-container {
+    height: 100%;
+    width: 95%;
+    max-width: 600px;
+    margin-top: 90px !important;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.terms-box {
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px !important;
+    overflow-y: auto;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
