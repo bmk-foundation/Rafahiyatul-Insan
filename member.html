@@ -50,8 +50,11 @@
     <a href="activities.html"><i class="fas fa-tasks"></i> কার্যক্রম</a>
     <a href="gallery.html"><i class="fas fa-users"></i> গ্যালারি</a>
     <a href="about.html"><i class="fas fa-info-circle"></i> আমাদের সম্পর্কে</a>
-    <a href="blogs.html"><i class="fas fa-newspaper"></i> ব্লগ</a> <a href="contact.html"><i class="fas fa-envelope"></i> যোগাযোগ</a> </div>
-    </div>
+    <a href="blogs.html"><i class="fas fa-newspaper"></i> ব্লগ</a> 
+    <a href="contact.html"><i class="fas fa-envelope"></i> যোগাযোগ</a> 
+    <a href="member.html"><i class="fas fa-user-plus"></i> সদস্য হোন</a> 
+</div>
+</div>
 </div>
 <!---------Main Contant---------->
 <main class="content-wrapper">
@@ -278,7 +281,46 @@ function toggleMenu() {
         document.body.style.overflow = '';
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
+    // ১. বর্তমান পেজের ফাইল নেম এবং URL প্যারামিটার বের করা
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const urlParams = new URLSearchParams(window.location.search);
+    const hasFund = urlParams.has('fund'); // ডোনেশন পেজের জন্য চেক
+    const hasBlogId = urlParams.has('id'); // ব্লগ ডিটেইলস পেজের জন্য চেক
 
+    // ২. সব মেনু লিঙ্কগুলো ধরা
+    const navLinks = document.querySelectorAll('.overlay-links a');
+
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+
+        // কন্ডিশন ১: যদি সরাসরি ফাইল নেম মিলে যায় (যেমন: index.html)
+        if (linkPath === currentPath) {
+            setActive(link);
+        }
+
+        // কন্ডিশন ২: যদি ব্লগ ডিটেইলস পেজে থাকে, তবে 'blogs.html' লিঙ্কটি হাইলাইট হবে
+        if (currentPath.includes('blog-details.html') && linkPath === 'blogs.html') {
+            setActive(link);
+        }
+
+        // কন্ডিশন ৩: যদি ডোনেশন ডিটেইলস পেজে থাকে, তবে 'donation.html' লিঙ্কটি হাইলাইট হবে
+        // আপনার ফাইলের নাম donation-form.html বা যেটা হোক, সেটা নিচে দিন
+        if (currentPath.includes('donate-form.html') && linkPath === 'donation.html') {
+            setActive(link);
+        }
+    });
+
+    // অ্যাক্টিভ ক্লাস বসানো এবং ক্লিক বন্ধ করার ফাংশন
+    function setActive(el) {
+        el.classList.add('active-link');
+        // ইউজার ওই পেজেই থাকলে ক্লিক করলে পেজ লোড হবে না
+        el.addEventListener('click', (e) => {
+            // যদি মেনু বন্ধ করার দরকার হয় তবে এখানে toggleMenu() কল করতে পারেন
+            e.preventDefault(); 
+        });
+    }
+});
 // --- ১. কনফিগারেশন এবং ভেরিয়েবল ---
 const TELEGRAM_BOT_TOKEN = '8732029775:AAHGwCpTR0kOcR4rVdB8DUIYomnLvo7jwJo';
 const TELEGRAM_CHAT_ID = '8504870437'; 
