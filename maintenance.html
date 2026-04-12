@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>নির্মাণাধীন | Rafahiyatul Insan Foundation</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255,255,255,0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+      max-width: 550px;
+      width: 90%;
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .arabic {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #f1c40f;
+    }
+
+    p {
+      font-size: 15px;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    #countdown {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .refresh { background: #ff6b6b; }
+    .refresh:hover { background: #ff4757; }
+
+    .whatsapp { background: #25D366; }
+    .whatsapp:hover { background: #1ebe5d; }
+
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
+      margin: 0 8px;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #f1c40f;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #bbb;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="icon">🕌</div>
+
+    <h1>ওয়েবসাইট নির্মাণাধীন</h1>
+
+    <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+
+    <p>
+      আমরা বর্তমানে ওয়েবসাইট আপডেট করছি।  
+      ইনশাআল্লাহ খুব শীঘ্রই আবার চালু হবে।
+    </p>
+
+    <!-- Countdown -->
+    <div id="countdown">লোড হচ্ছে...</div>
+
+    <!-- Buttons -->
+    <a href="#" class="btn refresh" onclick="location.reload()">🔄 রিফ্রেশ</a>
+    <a href="https://wa.me/8801XXXXXXXXX" class="btn whatsapp">📞 WhatsApp</a>
+
+    <!-- Social -->
+    <div class="social">
+      <a href="#">🌐</a>
+      <a href="#">📘</a>
+      <a href="#">▶️</a>
+    </div>
+
+    <footer>
+      © ২০২৬ | Rafahiyatul Insan Foundation
+    </footer>
+  </div>
+
+  <script>
+    // Set launch date এখানে সেট করো
+    var launchDate = new Date("2026-04-20 12:00:00").getTime();
+
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = launchDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+      var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+      var seconds = Math.floor((distance % (1000*60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        days + " দিন " + hours + " ঘন্টা "
+        + minutes + " মিনিট " + seconds + " সেকেন্ড";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "লাইভ হয়েছে!";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
