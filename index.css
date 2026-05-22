@@ -1562,3 +1562,73 @@ input[name="Email"]::placeholder {
         white-space: normal; /* লেখা লম্বা হলে স্বয়ংক্রিয়ভাবে নিচে নামবে */
     }
 }
+
+.drive-download-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #111111; /* প্লে-স্টোরের মতো ডার্ক ব্যাকগ্রাউন্ড */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #a5a5a5;
+    font-family: 'Adorsho', 'Segoe UI', sans-serif !important;
+    transition: all 0.3s ease;
+    max-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+/* মাউস হোভার এনিমেশন */
+.drive-download-btn:hover {
+    background-color: #222222;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ড্রাইভ আইকনের সাইজ ও মার্জিন */
+.drive-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+/* লেখার টেক্সট বিন্যাস */
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.top-text {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #b3b3b3;
+}
+
+.bottom-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+/* মোবাইল রেসপনসিভনেস */
+@media (max-width: 480px) {
+    .drive-download-btn {
+        padding: 6px 12px;
+    }
+    .drive-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    .bottom-text {
+        font-size: 13px;
+    }
+  }
