@@ -659,6 +659,24 @@ if ('serviceWorker' in navigator) {
             setTimeout(() => banner.remove(), 500);
         });
     }
+
+function forceDownloadApp() {
+    const fileUrl = "https://rafahiyatulinsan.2bd.net/app/ri_foundation_release.apk";
+    
+    // ১. একটি অদৃশ্য লিঙ্ক তৈরি করা
+    const tempLink = document.createElement('a');
+    tempLink.href = fileUrl;
+    tempLink.setAttribute('download', 'ri_foundation_release.apk');
+    
+    // ২. ব্রাউজার সিকিউরিটি বাইপাস করার জন্য এটিকে বডিতে যুক্ত করা
+    document.body.appendChild(tempLink);
+    
+    // ৩. স্বয়ংক্রিয়ভাবে ক্লিক ট্রিগার করা
+    tempLink.click();
+    
+    // ৪. কাজ শেষে লিঙ্কটি মুছে ফেলা
+    document.body.removeChild(tempLink);
+}
 </script>
 <!--script>
 window.location.href = "maintenance.html";
