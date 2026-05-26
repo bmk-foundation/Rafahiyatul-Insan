@@ -636,7 +636,7 @@ if ('serviceWorker' in navigator) {
                 <span style="font-size: 16px; font-weight: 600;"> ফাউন্ডেশনের অ্যাপ</span>
             </div>
             <div style="display: flex; gap: 10px; align-items: center;">
-                <button id="installBtn" style="background: white; color: #27ae60; border: none; padding: 10px 16px; border-radius: 25px; font-weight: bold; cursor: pointer; font-size: 14px;">ইন্সটল করুন</button>
+                <button id="installBtn" style="background: white; color: #27ae60; border: none; padding: 10px 16px; border-radius: 25px; font-weight: bold; cursor: pointer; font-size: 14px; font-family: 'adorsho';">ইনস্টল করুন</button>
                 <span id="closeBanner" style="font-size: 20px; cursor: pointer; padding: 5px;">&times;</span>
             </div>
         `;
@@ -648,7 +648,7 @@ if ('serviceWorker' in navigator) {
             banner.style.bottom = '0';
         }, 100);
 
-        // ইন্সটল বাটন ক্লিক লজিক
+        // ইনস্টল বাটন ক্লিক লজিক
         document.getElementById('installBtn').addEventListener('click', () => {
             banner.style.bottom = '-100px';
             if (deferredPrompt) {
